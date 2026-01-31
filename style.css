@@ -1,0 +1,570 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+  }
+  
+  .header .logo h1 {
+    font-size: 2rem;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .navbar ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85oh9kdA-phE4IlPdIGtaK8xl79-DlP0soQ&s'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Section Styling */
+  .sections {
+    padding: 50px 2rem;
+  }
+  
+  .about-containers, .academics-containers, .admissions-containers, .contact-containers {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* About Section Styling */
+.about {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: 30px;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  
+  .about-image {
+    width: 45%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+  }
+  
+  .about-content {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-content h3 {
+    font-size: 2rem;
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .about-content ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-content {
+      width: 100%;
+    }
+  
+    .about-content h2 {
+      font-size: 2rem;
+    }
+  
+    .about-content h3 {
+      font-size: 1.8rem;
+    }
+  
+    .about-content p {
+      font-size: 1rem;
+    }
+  }
+
+  /* Academics Section Styling */
+.academics {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: 30px;
+  }
+  
+  .academics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .academics h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  /* Program Sections */
+  .programs {
+    margin-bottom: 50px;
+  }
+  
+  .programs h3 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .program-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .program {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .program p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Faculty Section */
+  .faculty {
+    margin-bottom: 50px;
+  }
+  
+  .faculty h3 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .faculty p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .faculty-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .faculty-member {
+    text-align: center;
+  }
+  
+  .faculty-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .faculty-member h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .faculty-member p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .program-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .faculty-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .faculty-member img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+ 
+  /* Admission Section Styling */
+  .admission {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: 30px;
+  }
+  
+  .admission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .admission h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .admission-info {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .admission-info h3 {
+    font-size: 2rem;
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .admission-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .admission-info ul,
+  .admission-info ol {
+    font-size: 1.1rem;
+    color: #555;
+    margin-left: 20px;
+  }
+  
+  .admission-info table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .admission-info table th,
+  .admission-info table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .admission-info table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .apply-button {
+    margin-top: 30px;
+  }
+  
+  .btn {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admission-info {
+      padding: 0 20px;
+    }
+  
+    .admission-info table {
+      font-size: 0.9rem;
+    }
+  
+    .apply-button .btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+
+  
+/* Apply Form Section */
+.apply-form {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .apply-form h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-container {
+    text-align: left;
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .form-section h3 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .form-section label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-section input,
+  .form-section select,
+  .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-section textarea {
+    height: 120px;
+  }
+  
+  .submit-section {
+    text-align: center;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .apply-form {
+      padding: 30px 15px;
+    }
+  
+    .form-section h3 {
+      font-size: 1.6rem;
+    }
+  
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+      font-size: 1rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+
+  /* Contact Form Section */
+.contact-form-section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .contact-form-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+  }
+  
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-form-section {
+      padding: 30px;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }

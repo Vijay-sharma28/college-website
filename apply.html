@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <h1>ABGI</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="contact-form.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <!-- Admission Application Form -->
+  <section class="apply-form">
+    <div class="form-container">
+      <h2>Apply for Admission</h2>
+
+      <!-- Form submission -->
+      <form action="submit-form.php" method="POST" enctype="multipart/form-data" class="admission-form">
+        
+        <!-- Personal Information -->
+        <div class="form-section">
+          <h3>Personal Information</h3>
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <!-- Address Information -->
+        <div class="form-section">
+          <h3>Address Information</h3>
+          <label for="address">Permanent Address:</label>
+          <textarea id="address" name="address" required></textarea>
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+
+          <label for="zip">Zip Code:</label>
+          <input type="text" id="zip" name="zip" required>
+        </div>
+
+        <!-- Academic Information -->
+        <div class="form-section">
+          <h3>Academic Information</h3>
+          <label for="course">Select Program:</label>
+          <select id="course" name="course" required>
+            <option value="">-- Select Program --</option>
+            <option value="BSc Computer Science">B.Tech (CSE, ME, CE, ECE, EE)</option>
+            <option value="BA English">Diploma (CSE, ME, CE, ECE, EE)</option>
+            <option value="BBA">BCA</option>
+            <option value="MSc Data Science">BSC (MLS)</option>
+            <option value="MBA">Pharmacy</option>
+            <option value="MBA">BSC Nursing</option>
+            <option value="MBA">BSC Radiology</option>
+          </select>
+
+          <label for="previous-school">Previous School/College Name:</label>
+          <input type="text" id="previous-school" name="previous-school" required>
+
+          <label for="marks">Marks Obtained (in percentage):</label>
+          <input type="number" id="marks" name="marks" min="0" max="100" required>
+        </div>
+
+        <!-- Submit Section -->
+        <div class="form-section">
+          <label for="resume">Upload Resume (optional):</label>
+          <input type="file" id="resume" name="resume">
+
+          <div class="submit-section">
+            <button type="submit" class="submit-btn">Submit Application</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+</body>
+</html>
